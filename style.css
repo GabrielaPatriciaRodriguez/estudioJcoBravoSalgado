@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    max-width: max-content;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+ul {
+    list-style: none;
+}
+.up {
+	display:none;
+	padding:10px;
+	background:#0c0e0e;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer; 
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    border-radius: 30px;
+} 
+.up ion-icon{
+    width: 1.5em;
+    height: 1.5em;
+}
+/* Cabecera */
+header{
+    top: 0;
+    background: rgb(10, 31, 52);
+    height:5rem;
+    position: sticky;
+    z-index: 100;
+}
+
+.nav-main {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;    
+}
+.nav-menu{
+    display: flex;
+    margin: 0 10rem;
+}
+.nav-menu li{
+    padding: 10px;
+}
+.nav-main ul li a{
+    color: white;
+    padding: 4px;
+}
+#style-effect {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+#style-effect::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+#style-effect:hover {
+    color: rgb(218, 231, 243);
+}
+#style-effect:hover::before {
+    transform: scaleX(1);
+}
+.nav-icon{
+    display: flex;
+    margin-left: 22px;
+    margin-top: 10px;
+}
+.nav-icon a{
+    color: #ffffff;
+    margin-right: 15px;
+}
+.nav-icon a:hover{
+    opacity: 0.9;
+    color: rgb(218, 231, 243);
+}
+.nav-icon a ion-icon{
+    width: 1.5em;
+    height: 1.5em;
+}
+.nav-burguer {
+    position: absolute;
+    cursor: pointer;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
